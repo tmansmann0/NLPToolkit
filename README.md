@@ -1,5 +1,6 @@
 # NLPToolkit
 Natural Language Processing Tutorial and Examples for Python
+(WORK IN PROGRESS, NOT ALL FILES ARE HERE YET)
 
 # Welcome to my NLP Training Toolkit
 This short tutorial will get you on your way to making custom natural language systems in Python in no time whatsoever. Just follow these steps and you will have a working system in no time.
