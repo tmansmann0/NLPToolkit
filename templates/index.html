@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask CSV Entry</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Flask CSV Entry</h1>
+        {% if message %}
+            <div class="alert alert-success mt-4">{{ message }}</div>
+        {% endif %}
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="text">Text:</label>
+                <input type="text" class="form-control" id="text" name="text" placeholder="Enter text">
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select class="form-control" id="category" name="category">
+                    {% for category_option in categories %}
+                        <option value="{{ category_option }}" {% if category == category_option %}selected{% endif %}>{{ category_option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
