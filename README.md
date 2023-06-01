@@ -61,7 +61,7 @@ With that all out of the way, it is time to move on to entities.
 ### Entity System Creation
 Creating your entity extraction system is the more nuanced and complex part of creating a natural language processing system. For this step, you really want to understand what inputs each of your intents needs and handle each type of input on a case by case basis.
 
-The **entity_extraction_demo.py** file includes a variety of exampels and annotations on how to handle entity extraction via RegEx and keyword searches with FuzzyWuzzy.
+The **entity_extraction_demo.py** file includes a variety of exampels and annotations on how to handle entity extraction via RegEx and keyword searches with FuzzyWuzzy. The example detects a list of named variables with FuzzyWuzzy and dates, times, and urls with RegEX.
 
 #### Training a NER
 (More coming soon)
