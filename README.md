@@ -60,3 +60,4 @@ With that all out of the way, it is time to move on to entities.
 
 ### Entity System Creation
 Creating your entity extraction system is the more nuanced and complex part of creating a natural language processing system. For this step, you really want to understand what inputs each of your intents needs and handle each type of input on a case by case basis.
+(More coming soon)
