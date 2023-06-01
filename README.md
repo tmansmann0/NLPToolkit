@@ -45,7 +45,7 @@ Once you are done configuring your categories for detection, you will run the lo
 #### Making Intent Classifier data
 **Think of every way your user might wright out a command you want them to be able to access and write them out while the correct category is selected.** When I say every way, I really mean get creative with it. Assume your users will try the most absurd backwards wordings of what they want to do, and type it out. Include examples with and without intents, with things in backwards, etc. You want to get at least 15-25 examples for every intent you want, and more so if you have overlapping similarities in two or more intents.
 #### Training the intent classifier model
-Once you are done, you can check your new file data.csv for all your fully formatted data. Take the contents of this file, and copy it all into the training_data = [ ] section of *train_intent_model.py*
+Once you are done, you can check your new file data.csv for all your fully formatted data. Take the contents of this file, and copy it all into the training_data = [ ] section of *intent_model_trainer.py*
 
 Now, run the train intent model file. Keep an eye on the terminal for the training accuracy while it goes on, and especially keep an eye on what epoch is it at when it hits 95-100% accuracy. Go back into the file and set the epoch to in or around that range to prevent overfitting (AKA before it begins to only accept exact matches of its training data). Now with your epochs set, run the model again and you are ready for the next step.
 
@@ -60,4 +60,15 @@ With that all out of the way, it is time to move on to entities.
 
 ### Entity System Creation
 Creating your entity extraction system is the more nuanced and complex part of creating a natural language processing system. For this step, you really want to understand what inputs each of your intents needs and handle each type of input on a case by case basis.
+
+The **entity_extraction_demo.py** file includes a variety of exampels and annotations on how to handle entity extraction via RegEx and keyword searches with FuzzyWuzzy.
+
+#### Training a NER
 (More coming soon)
+
+#### Training a free form entity extractor
+(More coming soon)
+
+
+### Putting it all together
+(More coming soon, for now check out the annotations in entity_extraction_demo.py)
