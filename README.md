@@ -26,7 +26,7 @@ This can be accomplished using a combination of various methods:
 - **RegEx for entities** - A rule based approach can be taken for entities you know will be consistent, like time, dates, links, etc you can use a RegEx expression to extract these entities.
 - **FuzzyWuzzy for entities** - For entities which are explicitly named, like the names of devices, variables, etc which are prone to being misspelled by users
 - **Machine learning for entities** - You can train a Named Entity Recognition (NER) to identify entities which are explicitly named. NER helps in extracting structured information from unstructured text when tools like FuzzyWuzzy won't cut it. 
--- **Machine learning for free form entities** - You can train a custom Conditional Random Field (CRF) or Recurrent Neural Network (RNN) to pick out parts of your user input which might be more complex, like a description which the user desires to set for a variable, a situation where multiple variables are updated in one command (not recommended but possible), etc
+- **Machine learning for free form entities** - You can train a custom Conditional Random Field (CRF) or Recurrent Neural Network (RNN) to pick out parts of your user input which might be more complex, like a description which the user desires to set for a variable, a situation where multiple variables are updated in one command (not recommended but possible), etc
 
 
 ## Using this Toolkit
